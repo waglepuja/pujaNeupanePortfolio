@@ -21,26 +21,8 @@ portApp.hamburgerClick = () => {
 }
 // SMOOTH SCROLL
 
-
-
-$("a[href*='#']").click(function (e) {
-
-    e.preventDefault();
-
-    $("body, html").animate(
-
-        {
-
-            scrollTop: $($(this).attr("href")).offset().top
-
-        },
-
-        800,
-
-        "linear"
-
-    );
-
+const scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 600
 });
 
-
+console.log("hello")
