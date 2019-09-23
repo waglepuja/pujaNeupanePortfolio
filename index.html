@@ -12,6 +12,8 @@
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet"
         href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+
 </head>
 <!-- HEADER -->
 
@@ -28,10 +30,10 @@
         </div>
         <ul class="menuContent">
             <div class="menuContentWrap">
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#skills">Skills & Tools</a></li>
-                <li><a href="#contact">Contact Me</a></li>
+                <li><a id="menuAbout" href="#about">About Me</a></li>
+                <li><a id="menuWork" href="#work">Work</a></li>
+                <li><a id="menuSkills" href="#skills">Skills & Tools</a></li>
+                <li><a id="menuContact" href="#contact">Contact Me</a></li>
             </div>
         </ul>
     </header>
@@ -59,26 +61,20 @@
             <div class="projectOne">
                 <img src="assetsPortfolio\mockupBoatRide.png" alt="project1">
                 <div class="projectDescription">
-                    <h3>Title of the Project</h3>
-                    <h4>React, Firebase & Javascript Application</h4>
+                    <h3>PSD Conversion</h3>
+                    <h4>Html5, CSS & Responsive Design</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nisi provident veniam iusto
                         placeat
                         nulla cum recusandae labore ut ab corrupti, asperiores, illo maiores? Quasi corporis fugit
-                        quis
-                        sed
-                        quisquam?</p>
+                    </p>
                     <ul class="listContainer">
-                        <li>React</li>
-                        <li>Javascript</li>
-                        <li>Firebase</li>
                         <li>Html5</li>
-                        <li>CSS3</li>
-                        <li>jQuery</li>
-                        <li>API</li>
+                        <li>CSS</li>
+                        <li>Responsive Design</li>
                     </ul>
                     <div class="linksToProjects">
-                        <a href="">View Live</a>
-                        <a href="">Github</a>
+                        <a href="https://waglepuja.github.io/pujaNeupaneprojectTwo/">View Live</a>
+                        <a href="https://github.com/waglepuja/pujaNeupaneprojectTwo">Github</a>
                     </div>
                 </div>
             </div>
@@ -238,14 +234,14 @@
             <div class="contactText">
 
                 <span class="mail">waglepuja@gmail.com</span>
-                <form class="contactForm" action="">
+                <form class="contactForm" action="https://formspree.io/waglepuja@gmail.com" method="POST">
                     <div class="nameInput">
                         <label class="visuallyHidden" for="name">Name</label>
-                        <input type="name" placeholder="Full name" required>
+                        <input type="name" name="name" placeholder="Full name" required>
                     </div>
                     <div class="emailInput">
                         <label class="visuallyHidden" for="email">Email</label>
-                        <input type="email" placeholder="Email address" required>
+                        <input type="email" name="name" placeholder="Email address" required>
                     </div>
                     <div class="messageInput">
                         <label class="visuallyHidden" for="message">Message</label>
@@ -280,8 +276,9 @@
         </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
-    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
 
 </body>
 

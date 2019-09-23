@@ -5,7 +5,7 @@
 
 html{
   font-size: 62.5%;
-  scroll-behavior: smooth;
+  scroll-behavior:smooth;
 }
 .wrapper{
   width: 100%;
@@ -68,7 +68,7 @@ text-rendering: auto;
   padding: 30px;
 background:grey;
 position: relative;
-display: none;
+// display: none;
 }
 .menuContent li{
   padding: 20px 0; 

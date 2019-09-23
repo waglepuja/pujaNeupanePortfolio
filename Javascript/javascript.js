@@ -2,7 +2,7 @@ const portApp = {};
 
 portApp.hamburgerClick = () => {
     $("#hamburger").on("click", () => {
-        const menuStatus = $(".menuContent").hasClass("menuShow")
+        let menuStatus = $(".menuContent").hasClass("menuShow")
         if (menuStatus === false) {
             $("#hamburgerIcon").addClass("hamburgerSpin").delay(500).queue(function () {
                 $("#hamburgerIcon").removeClass("hamburgerSpin").addClass("hamburgerHide")
@@ -21,17 +21,26 @@ portApp.hamburgerClick = () => {
 }
 // SMOOTH SCROLL
 
-$('a[href*="#"]').on('click', function (e) {
-    e.preventDefault()
 
-    $('html, body').animate(
+
+$("a[href*='#']").click(function (e) {
+
+    e.preventDefault();
+
+    $("body, html").animate(
+
         {
-            scrollTop: $($(this).attr('href')).offset().top,
-        },
-        500,
-        'linear'
-    )
-})
 
+            scrollTop: $($(this).attr("href")).offset().top
+
+        },
+
+        800,
+
+        "linear"
+
+    );
+
+});
 
 
