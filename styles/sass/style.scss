@@ -1,5 +1,5 @@
 @import "setup";
-@import "typography";
+
 
 // GENERAL STYLES
 
@@ -20,6 +20,11 @@ header{
   position: relative;
   // height: 300px;
   background:#443a8b;
+}
+header img{
+  width: 100px;
+  height: 100px;
+  color: red;
 }
 header h1,
 h2{
@@ -58,17 +63,16 @@ font-size: 1.5rem;
 z-index: 300;
 }
 .fa{
-    display: inline-block;
-
-    font-size: 14px;
-font-size: inherit;
-text-rendering: auto;
+  display: inline-block;
+  font-size: 14px;
+  font-size: inherit;
+  text-rendering: auto;
 }
 .menuContentWrap{
   padding: 30px;
 background:grey;
 position: relative;
-// display: none;
+display: none;
 }
 .menuContent li{
   padding: 20px 0; 
@@ -266,7 +270,6 @@ main h2{
 .contactSection h2{
   color: #fff;
 }
-
 input,
 textarea{
   border-radius:0.8rem;
@@ -312,7 +315,8 @@ textarea{
   margin: 1rem 0 1rem 0;  
 }
 footer{
-  background-color:#fe6192;
+  font-size: 1rem;
+  background-color:#3b3d3b;
   text-align: center;
   color:#fff;
   padding:2px; 
@@ -325,6 +329,161 @@ footer{
   color: greenyellow
   
 }
+
+// MEDIA QUERIES
+
+// Bigger screen than Desktop
+@media (max-width: 1280px) {
+  header h1,h2{
+      font-size: 7rem;  
+  }
+  main h2{
+      font-size: 6rem;
+  }
+  }
+  /* Desktops */
+  @media (max-width: 1024px) {
+  header h1{
+      font-size: 6rem;
+  }
+  header h2{
+    font-size: 2rem;
+  }
+  main h2{
+      font-size: 4rem;
+  }
+  }
+  
+  /* Landscape phone to portrait tablet */
+  @media (max-width: 768px) {
+      header h1{
+          font-size: 4rem;
+          padding-top: 8rem;
+      }
+      header h2{
+        font-size: 1.5rem;
+        padding-top: 4rem;
+      }
+      main h2{
+          font-size: 3rem;
+      }
+      .hamburgerMenu a{
+        font-size: 2rem;
+      }
+      .wrapper{
+        width: 100%;
+      }
+      .img{
+        width: 100%;
+      }
+      .listContainer li{
+        font-size: 0.8rem;
+      }
+      .linksToProjects a{
+        font-size: 1rem;
+      }
+      .skillsContainer{
+        max-width: 100%;
+      }
+      .skillIconContainer h4{
+        font-size: 0.8rem;
+      }
+      .skillIconContainer i,
+      .skillIconContainer img{
+        font-size: 2rem;
+      }
+      .wrapper{
+        width: 100%;
+      }
+      input,
+      label{
+        font-size:1rem;
+      }
+      span{
+        font-size:2rem;
+      }
+      text-area{
+        font-size:3.5rem;
+      }
+      .socialIcons{
+        font-size:2rem;
+      }
+      .submitButton{
+        padding: 10px;
+      }
+      input,
+      textarea{
+        padding: 0.8rem 2rem;
+      }     
+      
+  }
+  
+  /* Landscape phones and down */
+  @media (max-width: 360px) {
+    header h1{
+      font-size: 3rem;
+      padding-top: 10rem;
+    }
+    main h2{
+      font-size:3rem;
+    }
+    .hamburgerMenu a{
+      font-size: 1rem;
+    }
+    main h2{
+      font-size: 2rem;
+    }
+    .wrapper{
+      width: 100%;
+    }
+    .img{
+      width: 100%;
+    }
+    .listContainer li{
+      font-size: 0.5rem;
+    }
+    .linksToProjects a{
+      font-size: 0.8rem;
+      padding: 8px;      
+    }
+    .skillsContainer{
+      width: 100%;
+    }
+    .skillIconContainer h4{
+      font-size: 0.6rem;
+    }
+    .skillIconContainer i,
+    .skillIconContainer img{
+      font-size: 1rem;
+    }
+    .wrapper{
+      width: 100%;
+    }
+    input,
+    label{
+      font-size:0.8rem;
+    }
+    span{
+      font-size:1rem;
+    }
+    text-area{
+      font-size:2rem;
+    }
+    .socialIcons{
+      font-size:1rem;
+    }
+    footer{
+      font-size: 0.6rem;
+      padding: 0.5rem;
+    }
+    input,
+    textarea{
+      padding: 0.5rem 1rem;
+    }     
+    
+
+  }
+
   /* HEADER */
 //   header {
 //   position: relative;
