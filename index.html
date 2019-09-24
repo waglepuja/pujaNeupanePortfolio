@@ -12,6 +12,7 @@
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet"
         href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
 </head>
@@ -19,14 +20,14 @@
 
 <body>
     <header>
-        <!-- <h4>Hello, I'm</h4> -->
-        <h1>Puja Neupane</h1>
-        <h2>Front-End Web Developer</h2>
-        <!-- <img src="http://erikdkennedy.com/r-r-r-random/divider-triangle.png" class="divider" /> -->
+        <div data-aos="zoom-in">
+            <h1>Puja Neupane</h1>
+            <h2>Front-End Web Developer</h2>
+        </div>
         <div id="hamburger" class="hamburgerMenu">
             <a href="#">
-                <i id="hamburgerIcon" class="fas fa-bars hamburgerHide" aria-hidden="true"></i>
-                <i class="fa fa-times exitIcon exitIconShow" aria-hidden="true"></i>
+                <i id="hamburgerIcon" class="fas fa-bars" aria-hidden="true"></i>
+                <i class="fa fa-times exitIcon" aria-hidden="true"></i>
         </div>
         <ul class="menuContent">
             <div class="menuContentWrap">
@@ -53,7 +54,7 @@
                     right it in, bring new ideas, and show why even the smallest
                     technical improvement can make a big impact! </p>
             </div>
-            <img src="./assetsPortfolio/selfPic.jpg" alt="#">
+            <img data-aos="flip-right" src="./assetsPortfolio/selfPic.jpg" alt="#">
         </section>
 
         <!-- SOME OF MY PROJECTS -->
@@ -246,16 +247,16 @@
                 </form>
                 <ul class="socialIcons">
                     <li>
-                        <a href="linkedIn"></a>
-                        <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/pujaneupane/" target="#">
+                            <i class="fab fa-linkedin"></i></a>
                     </li>
                     <li>
-                        <a href="github"></a>
-                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/waglepuja" target="#">
+                            <i class="fab fa-github"></i></a>
                     </li>
                     <li>
-                        <a href="twitter"></a>
-                        <i class="fab fa-twitter"></i>
+                        <a href="https://twitter.com/pujacodes" target="#">
+                            <i class="fab fa-twitter"></i></a>
                     </li>
                 </ul>
             </div>
@@ -275,6 +276,7 @@
 
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js">
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>

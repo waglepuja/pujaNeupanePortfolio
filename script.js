@@ -1,3 +1,5 @@
+// HAMBURGER MENU
+
 const portApp = {};
 
 portApp.hamburgerClick = () => {
@@ -19,10 +21,34 @@ portApp.hamburgerClick = () => {
         }
     })
 }
+
+portApp.events = () => {
+    portApp.hamburgerClick();
+}
+
 // SMOOTH SCROLL
 
 const scroll = new SmoothScroll('a[href*="#"]', {
     speed: 600
 });
 
-console.log("hello")
+// ANIMATION
+
+AOS.init({
+    duration: 1000,
+});
+
+// DOCUMENT READY AND INIT
+
+portApp.init = () => {
+    portApp.events()
+}
+
+$(function () {
+    portApp.init();
+});
+
+
+
+
+
