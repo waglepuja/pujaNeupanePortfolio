@@ -103,8 +103,7 @@ display: none;
 
 img{
   max-width:100%;
-  display: block;
-  border: 2px solid red;
+  display: block;  
 }
 .about img{
   width: 30%;
@@ -124,8 +123,7 @@ img{
 }
 .projectDescription,
 .aboutDescription{
-  max-width: 60%;  
-  border: 2px solid green; 
+  max-width: 60%;   
 }
 .aboutDescription p:first-child{
   line-height: 1.7;
@@ -152,8 +150,7 @@ img{
   justify-content: space-between;
   position: relative;
   bottom: 25px;
-  background:#f7f7f7;
-  border: 2px solid red; 
+  background:#f7f7f7;   
 }
 .projectOne .projectDescription,
 .projectThree .projectDescription{
@@ -233,14 +230,9 @@ main h2{
     max-width: 50%;
     padding-bottom: 8rem;;   
     margin: 0 auto;
-    position: relative;    
-    border: 2px solid red;
+    position: relative;     
 }
-.skillsSection{
-  border: 2px solid green;
-}
-.skillIconContainer{  
-  // border: 2px solid green;
+.skillIconContainer{   
   margin: 1.5rem;    
 }
 .skillIconContainer h4{
@@ -265,7 +257,6 @@ main h2{
   color: #fff;
   text-align: center;
   background:#443a8b;  
-  border: 2px solid red;
 }
 .contactSection h2{
   color: #fff;

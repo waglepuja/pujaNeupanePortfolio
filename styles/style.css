@@ -340,7 +340,6 @@ header h2 {
 img {
   max-width: 100%;
   display: block;
-  border: 2px solid red;
 }
 
 .about img {
@@ -371,7 +370,6 @@ img {
 .projectDescription,
 .aboutDescription {
   max-width: 60%;
-  border: 2px solid green;
 }
 
 .aboutDescription p:first-child {
@@ -407,7 +405,6 @@ img {
   position: relative;
   bottom: 25px;
   background: #f7f7f7;
-  border: 2px solid red;
 }
 
 .projectOne .projectDescription,
@@ -512,11 +509,6 @@ main h2 {
   padding-bottom: 8rem;
   margin: 0 auto;
   position: relative;
-  border: 2px solid red;
-}
-
-.skillsSection {
-  border: 2px solid green;
 }
 
 .skillIconContainer {
@@ -550,7 +542,6 @@ main h2 {
   color: #fff;
   text-align: center;
   background: #443a8b;
-  border: 2px solid red;
 }
 
 .contactSection h2 {
