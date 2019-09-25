@@ -230,6 +230,14 @@ html {
   margin: 0 auto;
 }
 
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 100%;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
@@ -244,7 +252,6 @@ header {
 header img {
   width: 100px;
   height: 100px;
-  color: red;
 }
 
 header img:last-child {
@@ -260,7 +267,7 @@ h2 {
   text-align: center;
   font-size: 5rem;
   text-transform: uppercase;
-  padding-top: 7rem;
+  padding-top: 10rem;
 }
 
 header h2 {
@@ -279,12 +286,13 @@ header h2 {
 }
 
 .hamburgerMenu a {
-  color: #fff;
+  color: #000;
   font-size: 2.5rem;
   position: fixed;
 }
 
 .menuContent {
+  display: none;
   position: absolute;
   right: 40px;
   top: 50px;
@@ -303,9 +311,8 @@ header h2 {
 
 .menuContentWrap {
   padding: 30px;
-  background: grey;
+  background: lightpink;
   position: relative;
-  display: none;
 }
 
 .menuContent li {
@@ -313,7 +320,7 @@ header h2 {
 }
 
 .menuContent li a {
-  color: pink;
+  color: #000;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   -webkit-transition-property: all;
@@ -327,7 +334,7 @@ header h2 {
 }
 
 .menuContent li a:hover {
-  color: yellow;
+  color: turquoise;
 }
 
 .menuShow,
@@ -352,6 +359,10 @@ img {
   width: 30%;
 }
 
+.projects {
+  padding-bottom: 3rem;
+}
+
 .projects img {
   max-width: 100%;
   display: block;
@@ -359,8 +370,6 @@ img {
           transform: scale(1);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  -webkit-box-shadow: -5px 30px 30px #b3b0b0;
-          box-shadow: -5px 30px 30px #b3b0b0;
 }
 
 .projects img:hover {
@@ -440,13 +449,6 @@ h3 {
       flex-wrap: wrap;
 }
 
-.projectTwo .listContainer,
-.projectFour .listContainer {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
 .listContainer li {
   margin: 5px;
   color: #fe6192;
@@ -454,10 +456,6 @@ h3 {
   padding: 5px 7px;
   font-size: 1.2rem;
   letter-spacing: 1.2px;
-}
-
-.listContainer li:hover {
-  color: #000;
 }
 
 li {
@@ -476,14 +474,6 @@ li {
   letter-spacing: 1.2px;
   font-weight: bold;
   background: #443a8b;
-}
-
-.linksToProjects a:last-child {
-  background-color: #fe6192;
-}
-
-.linksToProjects a:last-child:hover {
-  background-color: #443a8b;
 }
 
 .linksToProjects a:hover {
@@ -545,11 +535,6 @@ main h2 {
           justify-content: space-between;
 }
 
-.skillIconContainer i:hover,
-.skillIconContainer img:hover {
-  border: 3px solid #fe6192;
-}
-
 .contactSection {
   margin: 0 auto;
   color: #fff;
@@ -592,6 +577,7 @@ textarea {
   overflow: auto;
   vertical-align: top;
   margin-right: 4.5rem;
+  resize: none;
 }
 
 .submitButton {
@@ -616,6 +602,7 @@ textarea {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin: 1rem 0 1rem 0;
+  padding-bottom: 3rem;
 }
 
 .socialIcons a {
@@ -670,14 +657,17 @@ footer {
   main h2 {
     font-size: 3rem;
   }
-  .hamburgerMenu a {
-    font-size: 2rem;
+  .menuContent a {
+    font-size: 1rem;
+  }
+  .menuContent li {
+    padding: 5px 3px;
   }
   .wrapper {
     width: 100%;
   }
-  .img {
-    width: 100%;
+  .aboutDescription p {
+    font-size: 5rem;
   }
   .listContainer li {
     font-size: 0.8rem;
@@ -696,7 +686,7 @@ footer {
     font-size: 2rem;
   }
   .wrapper {
-    width: 100%;
+    max-width: 80%;
   }
   input,
   label {
@@ -713,6 +703,7 @@ footer {
   }
   .submitButton {
     padding: 10px;
+    margin: 0 auto;
   }
   input,
   textarea {
@@ -723,23 +714,26 @@ footer {
 /* Landscape phones and down */
 @media (max-width: 360px) {
   header h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     padding-top: 10rem;
   }
   main h2 {
-    font-size: 3rem;
+    font-size: 1.5rem;
   }
-  .hamburgerMenu a {
-    font-size: 1rem;
+  .menuContent a {
+    font-size: 0.5rem;
+  }
+  .menuContent li {
+    padding: 0.2rem;
   }
   main h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .wrapper {
-    width: 100%;
+    max-width: 80%;
   }
-  .img {
-    width: 100%;
+  .container {
+    max-width: 80%;
   }
   .listContainer li {
     font-size: 0.5rem;
@@ -758,18 +752,15 @@ footer {
   .skillIconContainer img {
     font-size: 1rem;
   }
-  .wrapper {
-    width: 100%;
-  }
   input,
-  label {
-    font-size: 0.8rem;
+  label,
+  textarea {
+    font-size: 0.5rem;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
   }
   span {
     font-size: 1rem;
-  }
-  text-area {
-    font-size: 2rem;
   }
   .socialIcons {
     font-size: 1rem;
@@ -781,5 +772,13 @@ footer {
   input,
   textarea {
     padding: 0.5rem 1rem;
+  }
+  .about {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+  }
+  .footer {
+    padding: 0.5rem;
   }
 }

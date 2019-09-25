@@ -38,7 +38,6 @@ AOS.init({
     duration: 1000,
 });
 
-// DOCUMENT READY AND INIT
 
 portApp.init = () => {
     portApp.events()
@@ -47,6 +46,10 @@ portApp.init = () => {
 $(function () {
     portApp.init();
 });
+
+
+
+
 
 
 

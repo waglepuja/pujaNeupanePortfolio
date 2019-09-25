@@ -10,6 +10,12 @@ html{
   width: 100%;
   margin: 0 auto;
 }
+img{
+  max-width: 100%;
+}
+.container{
+  max-width: 100%;
+}
 body{
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;	
@@ -21,8 +27,7 @@ header{
 }
 header img{
   width: 100px;
-  height: 100px;
-  color: red;
+  height: 100px;  
 }
 header img:last-child{
   position:relative;
@@ -36,7 +41,7 @@ h2{
   text-align: center;
   font-size: 5rem;
   text-transform: uppercase;
-  padding-top: 7rem;
+  padding-top: 10rem;
 }
 header h2{
   font-size: 3rem;
@@ -52,11 +57,12 @@ header h2{
     z-index: 5;    
 }
 .hamburgerMenu a{
-  color: #fff;
+  color: #000;
   font-size:2.5rem;
   position: fixed;  
 }
-.menuContent{    
+.menuContent{ 
+  display: none;   
 position: absolute;
 right: 40px;
 top: 50px;
@@ -73,24 +79,25 @@ z-index: 300;
 }
 .menuContentWrap{
   padding: 30px;
-background:grey;
+background:lightpink;
 position: relative;
-display: none;
+// display: none;
 }
 .menuContent li{
   padding: 20px 0; 
   
 }
 .menuContent li a{
-    color:pink;
+    color:#000;
     transition: all 0.3s ease-out;
     transition-property: all;
     transition-duration: 0.3s;
     transition-timing-function: ease-out;
     transition-delay: 0s;
+
 }
 .menuContent li a:hover{
-  color:yellow;
+  color:turquoise;
 }
 
 .menuShow,
@@ -111,12 +118,14 @@ img{
 .about img{
   width: 30%;
 }
+.projects{
+  padding-bottom: 3rem;
+}
 .projects img{
   max-width: 100%;  
   display: block;
   transform: scale(1);
-  transition: all 0.3s ease-in-out;
-  box-shadow: -5px 30px 30px #b3b0b0;  
+  transition: all 0.3s ease-in-out;    
 }
 .projects img:hover{
   transition: none;
@@ -173,10 +182,6 @@ h3{
   padding: 0;
   flex-wrap: wrap;
 }
-.projectTwo .listContainer,
-.projectFour .listContainer{
-  justify-content: flex-end;
-}
 .listContainer li{
   margin: 5px;
   color: #fe6192;
@@ -184,9 +189,6 @@ h3{
   padding: 5px 7px;
   font-size: 1.2rem;
   letter-spacing: 1.2px;
-}
-.listContainer li:hover{
-  color: #000;
 }
 li{
   list-style-type: none;
@@ -204,15 +206,9 @@ li{
   background:#443a8b;
      
 }
-.linksToProjects a:last-child{
-  background-color:#fe6192; 
-}
-.linksToProjects a:last-child:hover{
-  background-color:#443a8b;
-} 
 .linksToProjects a:hover{
-  background-color:#fe6192; 
-}
+  background-color:#fe6192;
+} 
 a{
   text-decoration: none;
   text-transform: uppercase;
@@ -255,10 +251,6 @@ main h2{
   background:#443a8b;
   justify-content: space-between;  
 }
-.skillIconContainer i:hover,
-.skillIconContainer img:hover{
-  border: 3px solid #fe6192;
-}
 .contactSection{  
   margin: 0 auto;
   color: #fff;
@@ -293,7 +285,8 @@ span{
 textarea{
   overflow: auto;
   vertical-align: top;
-  margin-right: 4.5rem;  
+  margin-right: 4.5rem;
+  resize:none;  
 }
 .submitButton{
   background:#fe6192;
@@ -309,7 +302,8 @@ textarea{
   display: flex;
   font-size: 3rem;  
   justify-content: space-around;
-  margin: 1rem 0 1rem 0;  
+  margin: 1rem 0 1rem 0;
+  padding-bottom: 3rem;  
 }
 .socialIcons a{
   color:#fff;
@@ -363,15 +357,20 @@ footer{
       main h2{
           font-size: 3rem;
       }
-      .hamburgerMenu a{
-        font-size: 2rem;
+      .menuContent a{        
+        font-size:1rem;        
       }
+      .menuContent li{
+        padding: 5px 3px;
+      }      
       .wrapper{
         width: 100%;
       }
-      .img{
-        width: 100%;
-      }
+           
+
+      .aboutDescription p{
+        font-size: 5rem;
+      }      
       .listContainer li{
         font-size: 0.8rem;
       }
@@ -389,7 +388,7 @@ footer{
         font-size: 2rem;
       }
       .wrapper{
-        width: 100%;
+        max-width: 80%;
       }
       input,
       label{
@@ -406,35 +405,42 @@ footer{
       }
       .submitButton{
         padding: 10px;
+        margin: 0 auto;
       }
       input,
       textarea{
         padding: 0.8rem 2rem;
-      }     
+      } 
       
   }
   
   /* Landscape phones and down */
   @media (max-width: 360px) {
     header h1{
-      font-size: 3rem;
+      font-size: 2rem;
       padding-top: 10rem;
     }
     main h2{
-      font-size:3rem;
+      font-size:1.5rem;
+    }    
+    .menuContent a{      
+      font-size:0.5rem;            
     }
-    .hamburgerMenu a{
-      font-size: 1rem;
-    }
+    .menuContent li{
+      padding: 0.2rem;        
+    }      
     main h2{
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
+    
     .wrapper{
-      width: 100%;
+      max-width: 80%;
     }
-    .img{
-      width: 100%;
+    
+    .container{
+      max-width: 80%;
     }
+    
     .listContainer li{
       font-size: 0.5rem;
     }
@@ -451,22 +457,19 @@ footer{
     .skillIconContainer i,
     .skillIconContainer img{
       font-size: 1rem;
-    }
-    .wrapper{
-      width: 100%;
-    }
+    }    
     input,
-    label{
-      font-size:0.8rem;
+    label,
+    textarea{
+      font-size:0.5rem;
+      margin: 0 auto;
+      margin-bottom: 0.5rem;
     }
     span{
       font-size:1rem;
     }
-    text-area{
-      font-size:2rem;
-    }
     .socialIcons{
-      font-size:1rem;
+      font-size:1rem;      
     }
     footer{
       font-size: 0.6rem;
@@ -475,10 +478,19 @@ footer{
     input,
     textarea{
       padding: 0.5rem 1rem;
-    }     
+    }
+    .about{
+      flex: none;      
+    }
+    
+    .footer{
+      padding: 0.5rem;
+    }
     
 
   }
+
+  
 
   
 
