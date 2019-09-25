@@ -436,6 +436,9 @@ footer{
     .wrapper{
       max-width: 80%;
     }
+    .hamburgerMenu a{
+      font-size: 1.5rem;
+    }
     
     .container{
       max-width: 80%;
@@ -481,6 +484,15 @@ footer{
     }
     .about{
       flex: none;      
+    }
+    .contactSection h2,
+    .skillsSection h2{
+      padding-top: 1.5rem;
+    }
+    .contactSection img,
+    .skillsSection img,
+    header img{
+      width: 60px;
     }
     
     .footer{
