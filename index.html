@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles/sass/style.scss">
+    <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Playfair+Display" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
@@ -43,23 +43,26 @@
 
     <!-- ABOUT ME SECTION -->
 
-    <main id="about wrapper">
-        <h2>About Me</h2>
-        <section class="about" id="about">
-            <div class="aboutDescription container">
-                <p>I am a front-end web developer changing the world of web development one code at a time. </p>
-                <p>I combine my
-                    knowledge in science and statistics with my technical skill set and have an eye for design to build
-                    web applications that look nice and improve the lives of users. As a team member, I always jump
-                    right it in, bring new ideas, and show why even the smallest
-                    technical improvement can make a big impact! </p>
+    <main>
+        <section class="about wrapper" id="about">
+            <h2>About Me</h2>
+            <div class="container">
+                <div class="aboutDescription">
+                    <p>I am a front-end web developer changing the world of web development one code at a time. </p>
+                    <p>I combine my
+                        knowledge in science and statistics with my technical skill set and have an eye for design to
+                        build
+                        web applications that look nice and improve the lives of users. As a team member, I always jump
+                        right it in, bring new ideas, and show why even the smallest
+                        technical improvement can make a big impact! </p>
+                </div>
+                <img data-aos="flip-right" src="./assetsPortfolio/selfPic.jpg" alt="#">
             </div>
-            <img data-aos="flip-right" src="./assetsPortfolio/selfPic.jpg" alt="#">
         </section>
 
         <!-- SOME OF MY PROJECTS -->
 
-        <section class="projects" id="work">
+        <section class="projects wrapper" id="work">
             <h2>Some of my work</h2>
             <div class="projectOne container">
                 <div data-aos="fade-right">
@@ -83,7 +86,7 @@
                     </div>
                 </div>
             </div>
-            <div class="projectTwo ">
+            <div class="projectTwo container ">
                 <div class="projectDescription">
                     <h3>Let's Go Paperless</h3>
                     <h4>React, Firebase, Javascript Application</h4>
@@ -98,7 +101,6 @@
                         <li>Firebase</li>
                         <li>Html5</li>
                         <li>CSS3</li>
-                        <li>jQuery</li>
                         <li>Responsive</li>
                     </ul>
                     <div class="linksToProjects">
@@ -139,7 +141,7 @@
                 </div>
             </div>
             <div class="projectFour container">
-                <div class="projectDescription container">
+                <div class="projectDescription">
                     <h3>Movie Selector</h3>
                     <h4>Javascript, jQuery, API Application</h4>
                     <p>Don't have to worry about spending lot of time searching for a movie to watch. Movie Selector
@@ -167,10 +169,10 @@
 
         <!-- SKILLS SECTION -->
 
-        <section class="skillsSection" id="skills">
-            <div class="wrapper">
-                <h2>Skills & Tools</h4>
-                    <img src="./assetsPortfolio/triangleCircle-svg.png" alt="">
+        <section class="skillsSection wrapper" id="skills">
+            <h2>Skills & Tools</h4>
+                <div class="container">
+                    <!-- <img src="./assetsPortfolio/triangleCircle-svg.png" alt=""> -->
                     <ul data-aos="zoom-in" class="skillsContainer">
                         <li class="skillItem">
                             <div class="skillIconContainer">
@@ -233,15 +235,15 @@
                             </div>
                         </li>
                     </ul>
-            </div>
+                </div>
         </section>
 
         <!-- CONTACT SECTION -->
 
-        <section class="contactSection" id="contact">
+        <section class="contactSection wrapper" id="contact">
             <h2>Contact Me</h2>
-            <div class="contactText">
-                <img src="./assetsPortfolio/Circle-svg.png" alt="">
+            <div class="contactText container">
+                <!-- <img src="./assetsPortfolio/Circle-svg.png" alt=""> -->
 
                 <span class="mail">waglepuja@gmail.com</span>
                 <form class="contactForm" action="https://formspree.io/waglepuja@gmail.com" method="POST">
@@ -257,7 +259,9 @@
                         <label class="visuallyHidden" for="message">Message</label>
                         <textarea name="message" id="" cols="30" rows="10" placeholder="Message" required></textarea>
                     </div>
-                    <input class="submitButton" type="submit" value="Send Message">
+                    <div>
+                        <input class="submitButton" type="submit" value="Send Message">
+                    </div>
                 </form>
                 <ul class="socialIcons">
                     <li>
