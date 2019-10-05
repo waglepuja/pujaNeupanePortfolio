@@ -663,7 +663,7 @@ footer {
 @media (max-width: 768px) {
   header h1 {
     font-size: 4rem;
-    padding-top: 8rem;
+    padding-top: 25rem;
   }
   header h2 {
     font-size: 1.5rem;
@@ -671,6 +671,7 @@ footer {
   }
   main h2 {
     font-size: 3rem;
+    padding: 5rem;
   }
   .menuContent a {
     font-size: 1rem;
@@ -681,12 +682,57 @@ footer {
   .container {
     width: 100%;
     margin: 0 auto;
+    padding-bottom: 5%;
   }
   .container img {
     width: 100%;
   }
   .aboutDescription p {
     font-size: 5rem;
+    margin: 5%;
+  }
+  .about img {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 5%;
+    width: 90%;
+    position: absolute;
+    top: 100%;
+  }
+  .projectOne,
+  .projectThree {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projectTwo,
+  .projectFour {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .projectDescription,
+  .aboutDescription {
+    margin: 0 auto;
+  }
+  .projectOne .projectDescription,
+  .projectThree .projectDescription {
+    padding-right: 12%;
+  }
+  .projectTwo .projectDescription,
+  .projectFour .projectDescription {
+    padding-left: 12%;
+  }
+  .projects {
+    margin-top: 18rem;
+    position: relative;
+  }
+  .projectDescription h3 {
+    text-align: center;
+    font-size: 2.8rem;
   }
   .listContainer li {
     font-size: 0.8rem;
@@ -698,11 +744,14 @@ footer {
     max-width: 100%;
   }
   .skillIconContainer h4 {
-    font-size: 0.8rem;
+    font-size: 1.8rem;
   }
-  .skillIconContainer i,
+  .skillIconContainer i {
+    font-size: 5rem;
+  }
   .skillIconContainer img {
-    font-size: 2rem;
+    width: 50px;
+    height: 50px;
   }
   input,
   label {
@@ -710,12 +759,20 @@ footer {
   }
   span {
     font-size: 2rem;
+    position: absolute;
+    top: -12%;
+    margin-left: -20%;
+    padding-bottom: 1rem;
   }
   text-area {
     font-size: 3.5rem;
   }
   .socialIcons {
     font-size: 2rem;
+    position: absolute;
+    bottom: -10%;
+    margin-left: -30%;
+    margin-top: 5%;
   }
   .submitButton {
     padding: 10px;
@@ -724,6 +781,9 @@ footer {
   input,
   textarea {
     padding: 0.8rem 2rem;
+  }
+  footer {
+    padding: 4rem;
   }
 }
 
