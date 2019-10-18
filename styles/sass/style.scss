@@ -9,23 +9,22 @@ html{
 .wrapper{
   width: 100%;
   margin: 0 auto;
-  max-width: 1350px;
-  // padding: 0 6%;
+  max-width: 1350px;  
 }
 img{
   width: 100%;
   max-width: 100%;
-  height: auto;
-  // width: 100%;
+  height: auto;  
   display: block;  
 }
 .container{
   max-width: 100%;
 }
 body{
-    font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden;	
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;	
 }
+// HEADER STYLES
 header{
   height: 95vh;
   position: relative;  
@@ -55,12 +54,13 @@ header h2{
   line-height: 1.5rem;
   padding-top: 2rem;  
 }
+// HAMBURGER MENU STYLES
 .hamburgerMenu{
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 30px 40px 0 0;
-    z-index: 5;    
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 30px 40px 0 0;
+  z-index: 5;    
 }
 .hamburgerMenu a{
   color: #000;
@@ -69,13 +69,13 @@ header h2{
 }
 .menuContent{ 
   display: none;   
-position: absolute;
-right: 40px;
-top: 50px;
-text-align: right;
-list-style: none;
-font-size: 1.5rem;
-z-index: 300;
+  position: absolute;
+  right: 40px;
+  top: 50px;
+  text-align: right;
+  list-style: none;
+  font-size: 1.5rem;
+  z-index: 300;
 }
 .fa{
   display: inline-block;
@@ -85,22 +85,19 @@ z-index: 300;
 }
 .menuContentWrap{
   padding: 30px;
-background:lightpink;
-position: relative;
-// display: none;
+  background:lightpink;
+  position: relative;
 }
 .menuContent li{
-  padding: 20px 0; 
-  
+  padding: 20px 0;   
 }
 .menuContent li a{
-    color:#000;
-    transition: all 0.3s ease-out;
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
-    transition-delay: 0s;
-
+  color:#000;
+  transition: all 0.3s ease-out;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
 }
 .menuContent li a:hover{
   color:turquoise;
@@ -108,16 +105,15 @@ position: relative;
 
 .menuShow,
 .exitIconShow{
-    display: block;
+  display: block;
 }
 .hamburgerHide{
-    display: none;
+  display: none;
 }
 .hamburgerMenu .exitIcon{
   display: none;
 }
-// MAIN
-
+// MAIN STYLES
 .projects{
   padding-bottom: 3rem;
 }
@@ -133,10 +129,6 @@ position: relative;
   transform: translateY(-8px);
   cursor: pointer;
 }
-// .projectDescription,
-// .aboutDescription{
-//   max-width: 60%;   
-// }
 .aboutDescription p:first-child{
   line-height: 1.7;
   font-size: 2rem;
@@ -211,8 +203,7 @@ li{
   text-transform: uppercase;
   letter-spacing: 1.2px;
   font-weight: bold;
-  background:#443a8b;
-     
+  background:#443a8b;     
 }
 .linksToProjects a:hover{
   background-color:#fe6192;
@@ -229,19 +220,20 @@ main h2{
   color:#000;
   padding:90px;  
 }
+// SKILLS STYLES
 .skillsSection{
   background-color:rgba(247, 229, 228,0.5);
 }
 
 .skillsContainer{  
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-    max-width: 70%;
-    padding-bottom: 8rem;;   
-    margin: 0 auto;
-    position: relative;     
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  max-width: 70%;
+  padding-bottom: 8rem;;   
+  margin: 0 auto;
+  position: relative;     
 }
 .skillIconContainer{   
   margin: 2rem;    
@@ -264,8 +256,8 @@ main h2{
   width: 85px;
   height: 85px;
 }
-.contactSection{  
-  // margin: 0 auto;
+// CONTACT STYLES
+.contactSection{   
   color: #fff;
   margin-top: -5%;
   text-align: center;
@@ -289,17 +281,12 @@ textarea:hover{
   border: 4px solid #fe6192;
 }
 .contactText form{
-  margin: 0 auto;
-  // margin-right: 12%;
-  // // margin-top: 3rem;
-  // justify-content: center;  
+  margin: 0 auto;   
   }
 input,
 label{
   font-size: 1.5rem;
-  
-  // border: 2px solid green;
-}
+ }
 span{
   font-size: 2.5rem;
   position: absolute;
@@ -310,8 +297,7 @@ span{
 textarea{
   font-size: 1.2rem;
   overflow: auto;
-  vertical-align: top;
-  // margin-right: 4.5rem;
+  vertical-align: top;  
   resize:none;  
 }
 .submitButton{
@@ -324,6 +310,7 @@ textarea{
 .submitButton:hover{
   border: 4px solid black;
 }
+// SOCIAL ICONS STYLES
 .socialIcons{
   justify-content:  center;
   display: flex;
@@ -331,21 +318,17 @@ textarea{
   position: absolute;
   top: 95%;
   left: 33%;  
-  // justify-content: space-around;
-  margin-bottom: 2rem;
-  // padding-bottom: 3rem;
+  margin-bottom: 2rem;  
 }
   
 .socialIcons a{
   color:#fff;
   margin: 5rem;  
-  // position: absolute;
-  // bottom: 10%;
-  
 }
 .socialIcons a:hover{
   color:#fe6192;
 }
+// FOOTER STYLES
 footer{
   font-size: 1.7rem;
   line-height: 2.3rem;
@@ -361,315 +344,280 @@ footer{
 // Bigger screen than Desktop
 @media (max-width: 1280px) {
   header h1,h2{
-      font-size: 7rem;  
+    font-size: 7rem;  
   }
   main h2{
-      font-size: 6rem;
+    font-size: 6rem;
   }
   }
   /* Desktops */
-  @media (max-width: 1024px) {
+@media (max-width: 1024px) {
   header h1{
-      font-size: 6rem;
+    font-size: 6rem;
   }
   header h2{
     font-size: 2rem;
   }
   main h2{
-      font-size: 4rem;
+    font-size: 4rem;
   }
   }
   
-  /* Landscape phone to portrait tablet */
-  @media (max-width: 768px) {
-      header h1{
-          font-size: 4rem;
-          padding-top: 25rem;
-      }
-      header h2{
-        font-size: 1.5rem;
-        padding-top: 4rem;
-      }
-      main h2{
-          font-size: 3rem;          
-          padding: 5rem;
-      }
-      // .projectDescription h4{
-      //   line-height: 2rem;      
-      // }
-      // .projectDescription h3{
-      //   padding-top: 2rem;
-      // }    
-      .menuContent a{        
-        font-size:1rem;        
-      }
-      .menuContent li{
-        padding: 5px 3px;
-      }      
-      // .wrapper{
-      //   width: 95%;
-      // }
-      .container{
-        width: 100%;
-        // justify-content: center;
-        margin: 0 auto;
-        padding-bottom: 5%;
-        // border: 2px solid green;
-      }
-      .container img{
-        width: 100%;    
-      }
-           
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  header h1{
+    font-size: 4rem;
+    padding-top: 25rem;
+  }
+  header h2{
+    font-size: 1.5rem;
+    padding-top: 4rem;
+  }
+  main h2{
+    font-size: 3rem;          
+    padding: 5rem;
+  }      
+  .menuContent a{        
+    font-size:1rem;        
+  }
+  .menuContent li{
+    padding: 5px 3px;
+  }       
+  .container{
+    width: 100%;        
+    margin: 0 auto;
+    padding-bottom: 5%;        
+  }
+  .container img{
+    width: 100%;    
+  }     
+  .aboutDescription p{
+    font-size: 5rem;
+    margin: 5%;
+  }      
+  .about img{
+    justify-content: center;
+    margin-left: 5%;
+    width: 90%;
+    position: absolute;
+    top: 100%;      
+  }    
+  .projectOne,
+  .projectThree{
+    flex-direction: column;            
+  }
+  .projectTwo,
+  .projectFour{
+    flex-direction: column-reverse;
+  }
+  .projectDescription,
+  .aboutDescription{    
+    margin: 0 auto;      
+  }
+  .projectOne .projectDescription,
+  .projectThree .projectDescription{
+    padding-right: 12%;
+  }
+  .projectTwo .projectDescription,
+  .projectFour .projectDescription{
+    padding-left: 12%;
+  }
+  .projects{
+    margin-top: 18rem; 
+    position: relative;     
+  }
+  .projectDescription h3{
+    text-align: center;
+    font-size: 2.8rem;
+  }     
+  .listContainer li{
+    font-size: 0.8rem;
+  }
+  .linksToProjects a{
+    font-size: 1rem;
+  }
+  .skillsContainer{
+    max-width: 100%;
+  }
+  .skillIconContainer h4{
+    font-size: 1.8rem;
+  }      
+  .skillIconContainer i{
+    font-size: 5rem;
+  }
+  .skillIconContainer img{
+    width: 50px;
+    height: 50px;
+  }    
+      
+  input,
+  label{
+    font-size:1rem;
+  }
+  span{
+    font-size:2rem;
+    position:absolute;      
+    top: -12%;
+    margin-left: -20%;
+    padding-bottom: 1rem;        
+  }
+  text-area{
+    font-size:3.5rem;
+  }
+  .socialIcons{
+    font-size:2rem;
+    position: absolute;
+    bottom: -10%;      
+    margin-left:-30%;
+    margin-top: 5%;   
 
-      .aboutDescription p{
-        font-size: 5rem;
-        margin: 5%;
-      }      
-      .about img{
-        justify-content: center;
-        margin-left: 5%;
-        width: 90%;
-        position: absolute;
-        top: 100%;      
-      }    
-      .projectOne,
-    .projectThree{
-      flex-direction: column;            
-    }
-    .projectTwo,
-    .projectFour{
-      flex-direction: column-reverse;
-    }
-    .projectDescription,
-    .aboutDescription{      
-      // text-align: center;
-      margin: 0 auto;
-      // border: 2px solid red;
-    }
-    .projectOne .projectDescription,
-    .projectThree .projectDescription{
-      padding-right: 12%;
-    }
-    .projectTwo .projectDescription,
-    .projectFour .projectDescription{
-      padding-left: 12%;
-    }
-    .projects{
-      margin-top: 18rem; 
-      position: relative;     
-    }
-    .projectDescription h3{
-      text-align: center;
-      font-size: 2.8rem;
-    }     
-      .listContainer li{
-        font-size: 0.8rem;
-      }
-      .linksToProjects a{
-        font-size: 1rem;
-      }
-      .skillsContainer{
-        max-width: 100%;
-      }
-      .skillIconContainer h4{
-        font-size: 1.8rem;
-      }
-      // .skillIconContainer i,
-      // .skillIconContainer img{
-      //   font-size: 2rem;
-      // }
-      .skillIconContainer i{
-        font-size: 5rem;
-      }
-      .skillIconContainer img{
-        width: 50px;
-        height: 50px;
-      }    
-      // .wrapper{
-      //   max-width: 80%;
-      // }
-      input,
-      label{
-        font-size:1rem;
-      }
-      span{
-        font-size:2rem;
-        position:absolute;      
-        top: -12%;
-        margin-left: -20%;
-        padding-bottom: 1rem;
-        
-      }
-      text-area{
-        font-size:3.5rem;
-      }
-      .socialIcons{
-        font-size:2rem;
-        position: absolute;
-        bottom: -10%;      
-        margin-left:-30%;
-        margin-top: 5%;   
-
-      }
-      .submitButton{
-        padding: 10px;
-        margin: 0 auto;
-      }
-      input,
-      textarea{
-        padding: 0.8rem 2rem;
-      }
-      footer{
-        padding: 4rem;
-      } 
+  }
+  .submitButton{
+    padding: 10px;
+    margin: 0 auto;
+  }
+  input,
+  textarea{
+    padding: 0.8rem 2rem;
+  }
+  footer{
+    padding: 4rem;
+  } 
       
   }
   
-  /* Landscape phones and down */
-  @media (max-width: 360px) {   
-    header h1{
-      font-size: 3rem;
-      padding-top: 20rem;
-    }
-    main h2{
-      font-size:2.5rem;
-      padding: 2rem;      
-    }
-    .projectDescription h4{
-      line-height: 2rem;      
-    }
-    .projectDescription h3{
-      padding-top: 2rem;
-    }    
+/* Landscape phones and down */
+@media (max-width: 360px) {   
+  header h1{
+    font-size: 3rem;
+    padding-top: 20rem;
+  }
+  main h2{
+    font-size:2.5rem;
+    padding: 2rem;      
+  }
+  .projectDescription h4{
+    line-height: 2rem;      
+  }
+  .projectDescription h3{
+    padding-top: 2rem;
+  }    
 
-    .menuContent a{      
-      font-size:0.5rem;            
-    }
-    .menuContent li{
-      padding: 0.2rem;             
-    }      
+  .menuContent a{      
+    font-size:0.5rem;            
+  }
+  .menuContent li{
+    padding: 0.2rem;             
+  }      
    
-    .hamburgerMenu a{
-      font-size: 1.5rem;
-    }
-    .container{
-      padding-top: 10%;
-      padding-bottom: 5%;
-      margin-top: 5%;     
-    }
-    .about img{
-      justify-content: center;
-      width: 100%;
-      position: absolute;
-      top: 100%;      
-    }    
-    .projects{
-      margin-top: 18rem; 
-      position: relative;     
-    }
-    h3{
-      font-size: 2rem;
-      margin: 0 auto;
-    }
-    h4{
-      font-size: 1.5rem;      
-    }    
-    .projectOne,
-    .projectThree{
-      flex-direction: column;      
-    }
-    .projectTwo,
-    .projectFour{
-      flex-direction: column-reverse;
-    }
-    .projectDescription,
-    .aboutDescription{
-      margin:0 8%;
-    }     
+  .hamburgerMenu a{
+    font-size: 1.5rem;
+  }
+  .container{
+    padding-top: 10%;
+    padding-bottom: 5%;
+    margin-top: 5%;     
+  }
+  .about img{
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 100%;      
+  }    
+  .projects{
+    margin-top: 18rem; 
+    position: relative;     
+  }
+  h3{
+    font-size: 2rem;
+    margin: 0 auto;
+  }
+  h4{
+    font-size: 1.5rem;      
+  }    
+  .projectOne,
+  .projectThree{
+    flex-direction: column;      
+  }
+  .projectTwo,
+  .projectFour{
+    flex-direction: column-reverse;
+  }
+  .projectDescription,
+  .aboutDescription{
+     margin:0 8%;
+  }     
         
-    .container{
-      max-width: 100%;
-    }
+  .container{
+    max-width: 100%;
+  }
     
-    .listContainer li{
-      font-size: 0.8rem;
-    }
-    .linksToProjects a{
-      font-size: 1rem;
-      padding: 8px;      
-    }
-    .skillsContainer{
-      width: 100%;
-    }
-    .skillIconContainer h4{
-      font-size: 1.5rem;
-    }
-    .skillIconContainer i{
-      font-size: 4.5rem;
-    }
-    .skillIconContainer img{
-      width: 30px;
-      height: 30px;
-    }    
-    input,
-    label,
-    textarea{
-      font-size:1rem;
-      // margin: 0 auto;
-      margin-bottom: 1rem;
-    }
-    span{
+  .listContainer li{
+    font-size: 0.8rem;
+  }
+  .linksToProjects a{
+    font-size: 1rem;
+    padding: 8px;      
+  }
+  .skillsContainer{
+     width: 100%;
+  }
+  .skillIconContainer h4{
+    font-size: 1.5rem;
+  }
+  .skillIconContainer i{
+    font-size: 4.5rem;
+  }
+  .skillIconContainer img{
+    width: 30px;
+    height: 30px;
+  }    
+  input,
+  label,
+  textarea{
+    font-size:1rem;      
+    margin-bottom: 1rem;
+  }
+  span{
       font-size:1.5rem;      
-      position:absolute;      
-      top: -5%;
-      margin-left: -20%;
-      padding-bottom: 1rem;
-    }
-    .socialIcons{
-      font-size:1.5rem;
-      position: absolute;
-      bottom: -10%;      
-      margin: 0 auto;
-      padding-top: 5%;    
+    position:absolute;      
+    top: -5%;
+    margin-left: -20%;
+    padding-bottom: 1rem;
+  }
+  .socialIcons{
+    font-size:1.5rem;
+    position: absolute;
+    bottom: -10%;      
+    margin: 0 auto;
+    padding-top: 5%;    
          
-    }
-    .socialIcons a{
-      margin-left:-65%;            
-    }
+  }
+  .socialIcons a{
+    margin-left:-65%;            
+  }
     
-    footer{
-      font-size:1rem;
-      padding: 2rem;
-      line-height: 1.5rem;
-    }
-    input,
-    textarea{
-      padding: 0.5rem 0.5rem;
-    }
-    .contactText form{
-      margin: 0 auto;
-    }
-    // .submitButton{
-    //   margin-bottom: 1rem;
-    //   margin-left: -25%;
-    // }   
-    // .container{
-    //   width: 100%;
-    //   height:auto;
-    // }
-    // .about img{
-    //   width: 100%;
-    // }
-    .contactSection h2,
-    .skillsSection h2{
-      padding-top: 1.5rem;
-    }
-    .contactSection img,
-    .skillsSection img,
+  footer{
+    font-size:1rem;
+    padding: 2rem;
+    line-height: 1.5rem;
+  }
+  input,
+  textarea{
+    padding: 0.5rem 0.5rem;
+  }
+  .contactText form{
+    margin: 0 auto;
+  }    
+  .contactSection h2,
+  .skillsSection h2{
+    padding-top: 1.5rem;
+  }
+  .contactSection img,
+  .skillsSection img,
     header img{
       width: 60px;
-    }   
-      
+    }       
 
   }
 
