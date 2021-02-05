@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
+    <title>Puja Neupane : Front-End Developer</title>
     <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Playfair+Display" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
@@ -13,17 +13,21 @@
     <link rel="stylesheet"
         href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Favicon logo -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assetsPortfolio/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assetsPortfolio/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assetsPortfolio\favicon_io\favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
 
 </head>
-<!-- HEADER -->
+<!-- HEADER starts here -->
 
 <body>
     <header>
-        <div data-aos="zoom-in">
-            <h1>Puja Neupane</h1>
-            <h2>Front-End Web Developer</h2>
-        </div>
+        <h1>Puja Neupane</h1>
+        <h2>Front-End Web Developer</h2>
+
         <div id="hamburger" class="hamburgerMenu">
             <a href="#">
                 <i id="hamburgerIcon" class="fas fa-bars" aria-hidden="true"></i>
@@ -37,16 +41,24 @@
                 <li><a id="menuContact" href="#contact">Contact Me</a></li>
             </div>
         </ul>
+
+        <div class="scrollDown">
+            <a aria-label="Scroll to bottom" id="downArrow" href="#about">
+                <i class="fas fa-angle-double-down"></i>
+            </a>
+        </div>
         <img src="./assetsPortfolio/triangle-svg.png" alt="green triangle">
         <img src="./assetsPortfolio/Circle-svg.png" alt="green circle">
+
+
     </header>
 
     <!-- ABOUT ME SECTION -->
 
     <main>
-        <section class="about wrapper" id="about">
+        <section class=" aboutMe wrapper" id="about">
             <h2>About Me</h2>
-            <div class="container">
+            <div class="aboutContainer">
                 <div class="aboutDescription">
                     <p>I am a front-end web developer changing the world of web development one code at a time. </p>
                     <p>I combine my
@@ -56,21 +68,22 @@
                         right in, bring new ideas, and show why even the smallest
                         technical improvement can make a big impact! </p>
                 </div>
-                <img data-aos="flip-right" src="./assetsPortfolio/selfPic.jpg" alt="picture of self">
+                <div class=aboutImgContainer>
+                    <img data-aos="flip-right" src="./assetsPortfolio/profilePic.jpg" alt="picture of self">
+                </div>
             </div>
         </section>
 
         <!-- SOME OF MY PROJECTS -->
 
         <section class="projects wrapper" id="work">
-            <h2>Some of my work</h2>
+            <h2> My works</h2>
             <div class="projectOne container">
                 <div data-aos="fade-right">
                     <img src="assetsPortfolio/techChallenge.png" alt="a dog sitting on a grey couch and barking">
                 </div>
                 <div class="projectDescription">
                     <h3>PSD Conversion</h3>
-                    <h4>Html5, CSS & Responsive Design</h4>
                     <p>Created a single page PSD conversion app from the available design. It is fully responsive in
                         different viewpoints. This app gives a clear view of a single page app with all the basic
                         structures in it.
@@ -87,9 +100,12 @@
                 </div>
             </div>
             <div class="projectTwo container ">
+                <div data-aos="fade-left">
+                    <img src="assetsPortfolio\letsGoPaperless.png"
+                        alt="a desktop screen with an image of a basket with lots of groceries">
+                </div>
                 <div class="projectDescription">
                     <h3>Let's Go Paperless</h3>
-                    <h4>React, Firebase, JavaScript Application</h4>
                     <p>Can't remember where you left your grogery list? No problem, we do. This app will help you
                         not to
                         worry about your grocery list anymore. You can simply add your list according to the
@@ -108,10 +124,7 @@
                         <a href="https://github.com/waglepuja/pujaNeupaneProjectFive" target="#">Github</a>
                     </div>
                 </div>
-                <div data-aos="fade-left">
-                    <img src="assetsPortfolio\letsGoPaperless.png"
-                        alt="a desktop screen with an image of a basket with lots of groceries">
-                </div>
+
             </div>
             <div class="projectThree container">
                 <div data-aos="fade-right">
@@ -120,7 +133,6 @@
                 </div>
                 <div class="projectDescription">
                     <h3>Not So Trivial Pursuit</h3>
-                    <h4>React, Firebase, JavaScript Application</h4>
                     <p>If you are looking to gain some knowledge while having fun, this app is perfect for you. Don't
                         have time to finish? You can always save your game and play again. Don't forget to see your
                         score!</p>
@@ -140,9 +152,11 @@
                 </div>
             </div>
             <div class="projectFour container">
+                <div data-aos="fade-left">
+                    <img src="assetsPortfolio\movieSelector.png" alt="a desktop screen with an image of the app">
+                </div>
                 <div class="projectDescription">
                     <h3>Movie Selector</h3>
-                    <h4>JavaScript, jQuery, API Application</h4>
                     <p>Don't have to worry about spending lot of time searching for a movie to watch. Movie Selector
                         app
                         helps you find the perfect movie depending on your mood. Why wait for it? Let's use this app!
@@ -160,83 +174,85 @@
                         <a href="https://github.com/projectFourMarliPuja/appNameMarliPuja" target="#">Github</a>
                     </div>
                 </div>
-                <div data-aos="fade-left">
-                    <img src="assetsPortfolio\movieSelector.png" alt="a desktop screen with an image of the app">
-                </div>
+
             </div>
         </section>
 
         <!-- SKILLS SECTION -->
 
         <section class="skillsSection wrapper" id="skills">
-            <h2>Skills & Tools</h4>
-                <div class="container">
-                    <!-- <img src="./assetsPortfolio/triangleCircle-svg.png" alt=""> -->
-                    <ul data-aos="zoom-in" class="skillsContainer">
-                        <li class="skillItem">
-                            <div class="skillIconContainer">
-                                <i class="fab fa-html5"></i>
-                                <h4>HTML5</h4>
-                            </div>
-                        </li>
-                        <li class="skillItem">
-                            <div class="skillIconContainer">
-                                <i class="fab fa-css3-alt"></i>
-                                <h4>CSS3</h4>
-                            </div>
-                        </li>
-                        <li class="skillItem">
-                            <div class="skillIconContainer">
-                                <i class="fab fa-js"></i>
-                                <h4>JavaScript</h4>
-                            </div>
-                        </li>
-                        <li class="skillItem">
-                            <div class="skillIconContainer">
-                                <i class="fab fa-react"></i>
-                                <h4>React</h4>
-                            </div>
-                        </li>
-                        <li class="skillItem">
-                            <div class="skillIconContainer">
-                                <i class="devicon-jquery-plain"></i>
-                                <h4>jQuery</h4>
-                            </div>
-                        </li>
-                        <li class="skillItem">
-                            <div class="skillIconContainer">
-                                <img src="./assetsPortfolio/icons8-firebase.svg"
-                                    alt="a logo for firebase that looks like an open envelope">
-                                <h4>Firebase</h4>
-                            </div>
-                        </li>
-                        <li class="skillItem">
-                            <div class="skillIconContainer">
-                                <i class="fab fa-github"></i>
-                                <h4>GitHub</h4>
-                            </div>
-                        </li>
-                        <li class="skillItem">
-                            <div class="skillIconContainer">
-                                <i class="fab fa-sass"></i>
-                                <h4>Sass</h4>
-                            </div>
-                        </li>
-                        <li class="skillItem">
-                            <div class="skillIconContainer">
-                                <i class="devicon-visualstudio-plain"></i>
-                                <h4>VsCode</h4>
-                            </div>
-                        </li>
-                        <li class="skillItem">
-                            <div class="skillIconContainer">
-                                <img src="./assetsPortfolio/icons8-sublime-text-filled-svg.png"
-                                    alt="a letter S on top of pile of books ">
-                                <h4>Sublime</h4>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+            <h2>Skills & Tools</h2>
+            <div class="skillsContainer">
+                <!-- <img src="./assetsPortfolio/triangleCircle-svg.png" alt=""> -->
+                <ul data-aos="zoom-in" class="skillsContainer">
+                    <li class="skillItem">
+                        <div class="skillIconContainer">
+                            <i class="fab fa-html5"></i>
+                            <h4>HTML5</h4>
+                        </div>
+                    </li>
+                    <li class="skillItem">
+                        <div class="skillIconContainer">
+                            <i class="fab fa-css3-alt"></i>
+                            <h4>CSS3</h4>
+                        </div>
+                    </li>
+                    <li class="skillItem">
+                        <div class="skillIconContainer">
+                            <i class="fab fa-js"></i>
+                            <h4>JavaScript</h4>
+                        </div>
+                    </li>
+                    <li class="skillItem">
+                        <div class="skillIconContainer">
+                            <i class="fab fa-react"></i>
+                            <h4>React</h4>
+                        </div>
+                    </li>
+                    <li class="skillItem">
+                        <div class="skillIconContainer">
+                            <!-- <i class="devicon-jquery-plain"></i> -->
+                            <img src="./assetsPortfolio/favicon_io/iconfinder_jquery_282807.png" alt="#">
+                            <h4>jQuery</h4>
+                        </div>
+                    </li>
+                    <li class="skillItem">
+                        <div class="skillIconContainer">
+                            <img src="./assetsPortfolio/icons8-firebase.svg"
+                                alt="a logo for firebase that looks like an open envelope">
+                            <h4>Firebase</h4>
+                        </div>
+                    </li>
+                    <li class="skillItem">
+                        <div class="skillIconContainer">
+                            <i class="fab fa-github"></i>
+                            <h4>GitHub</h4>
+                        </div>
+                    </li>
+                    <li class="skillItem">
+                        <div class="skillIconContainer">
+                            <i class="fab fa-sass"></i>
+                            <h4>Sass</h4>
+                        </div>
+                    </li>
+                    <li class="skillItem">
+                        <div class="skillIconContainer">
+                            <img src="./assetsPortfolio/icons8-sublime-text-filled-svg.png"
+                                alt="a letter S on top of pile of books ">
+                            <h4>Sublime</h4>
+                        </div>
+                    </li>
+                    <li class="skillItem">
+                        <div class="skillIconContainer">
+                            <img src="./assetsPortfolio/favicon_io/iconfinder_windows-visual-studio_306167.png" alt="#">
+                            <!-- <i class="devicon-visualstudio-plain"></i> -->
+                            <h4>VsCode</h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- // SKILLS CONTAINER ENDS HERE // -->
+
         </section>
 
         <!-- CONTACT SECTION -->
@@ -246,23 +262,22 @@
             <div class="contactText container">
                 <!-- <img src="./assetsPortfolio/Circle-svg.png" alt=""> -->
 
-                <span class="mail">waglepuja@gmail.com</span>
+                <h4 class="mail">waglepuja@gmail.com</h4>
                 <form class="contactForm" action="https://formspree.io/waglepuja@gmail.com" method="POST">
-                    <div class="nameInput">
-                        <label class="visuallyHidden" for="name">Name</label>
-                        <input type="name" name="name" placeholder="Full name" required>
-                    </div>
-                    <div class="emailInput">
+                    <fieldset>
+                        <label class="visuallyHidden" for="username">Name</label>
+                        <input id="username" type="text" name="username" placeholder="Full name" autocorrect="off"
+                            required="">
+
                         <label class="visuallyHidden" for="email">Email</label>
-                        <input type="email" name="name" placeholder="Email address" required>
-                    </div>
+                        <input id="email" type="email" name="email" placeholder="Email address" autocorrect="off"
+                            required="">
+                    </fieldset>
                     <div class="messageInput">
-                        <label class="visuallyHidden" for="message">Message</label>
-                        <textarea name="message" id="" cols="30" rows="10" placeholder="Message" required></textarea>
+                        <label class="visuallyHidden" for="textarea">Message</label>
+                        <textarea name="message" id="" cols="20" rows="5" placeholder="Message" required></textarea>
                     </div>
-                    <div>
-                        <input class="submitButton" type="submit" value="Send Message">
-                    </div>
+                    <button type="submit">Submit</button>
                 </form>
                 <ul class="socialIcons">
                     <li>
@@ -281,13 +296,18 @@
             </div>
         </section>
     </main>
-    <!-- main end here -->
+    <!-- main ends here -->
     <!-- FOOTER STARTS HERE -->
 
     <footer>
         <div class="wrapper copyright">
             <p>Copyright &copy; 2019 Puja Neupane</p>
             <p>Photo credit:Fatima Gueye</p>
+        </div>
+        <div class="goBackToTop">
+            <a aria-label="Go to top of page" id="arrow" href="#home">
+                <i class="fas fa-arrow-circle-up"></i>
+            </a>
         </div>
     </footer>
 
